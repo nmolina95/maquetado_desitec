@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-size: 10px;
+}
+
+h2{
+    color: darkslategrey;
+}
+
+/*====== Header ======*/
+.main-header {
+    display:flex;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.logo img{
+    width: auto;
+    max-height: 50px;
+    margin: 10px 0 10px 20px;
+}
+
+.nav-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-list li{
+    padding: 15px;
+    font-size: 16px;
+}
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 1.6rem;
+}
+.fa-bars {
+    color: darkslategrey;
+}
+/*====== /Header ======*/
+
+/*====== Body ======*/
+.main {
+    background: linear-gradient(0deg, rgba(34,195,107,1) 0%, rgba(253,187,45,1) 100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Merriweather Sans', sans-serif;
+    min-height: 82vh;
+}
+
+.filter{
+    min-width: 270px;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 0 6rem;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.filter-info p{
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.tools{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tools p{
+    font-size: 1rem;
+}
+
+.filter-list {
+    background: none;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    width: 10rem;
+}
+
+.filter-list option{
+     text-align: center;
+}
+.user-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    background: rgba(255,255,255,0.7);
+    margin: 1rem;
+    width: 263px;
+    border-radius: 5px;
+}
+.card:hover {
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 1);
+    transition: 300ms;
+}
+.user-card {
+    text-align: center;
+}
+.card-id {
+    text-align: left;
+    padding: 5px 0 0 5px;
+}
+.card-info {
+    padding: 0 10px 10px 10px;
+}
+.user-card a{
+    color: black;
+}
+.list-item {
+    padding: 15px;
+    font-size: 1rem;
+}
+.main-profile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+.main-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-info h1{
+    font-size: 2rem;
+}
+.main-info span{
+    font-size: 1rem;
+}
+.profile-card{
+    width: 60vw;
+    height: fit-content;
+    background: rgba(255,255,255,0.6);
+    border-radius: 5px;
+    padding: 15px;
+}
+.more-info ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.more-info li{
+    font-size: 1rem;
+    padding: 10px 0;
+    margin-top: 10px;
+    width: 50%;
+}
+.bold {
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+.noDisplay {
+    display: none;
+}
+/*====== /Body ======*/
+
+/*====== Footer ======*/
+.main-footer {
+    background: #100217E6;
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: white;
+    padding: 15px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-info a {
+    color: white;
+}
+/*====== /Footer ======*/
+
+/*====== Media Queries ======*/
+@media screen and (max-width: 767px){
+    .more-info li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .profile-card {
+        width: 90%;
+    }
+    .navbar {
+        display: none;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-list li{
+        font-size: 1.4rem;
+    }
+    .navbar-on {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .menu-toggle {
+        display: none;
+    }
+}
+/*====== /Media Queries ======*/

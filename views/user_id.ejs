@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d92a2a2802.js" crossorigin="anonymous"></script>
+    <!-- /Font link -->
+    
+    <!-- JavaScript -->
+    <script src="/js/js.js"></script>
+    <!-- /JavaScript -->
+    
+    <!-- CSS link -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- /CSS link -->
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <%- include('partials/header') %>
+    <!-- /Header -->
+
+    <!-- Main -->
+    <div class="main">
+        <div class="main-profile">
+            <section class="profile-card">
+                <div class="main-info">
+                    <h1><%= e.lastName + " " + e.firstName %></h1>
+                    <span>ID: <%= e.id %></span>
+                </div>
+                <article class="more-info">
+                    <ul>
+                        <li><span class="bold">Email: </span><%= e.email %></li>
+                        <li><span class="bold">Usuario: </span><%= e.username %></li>
+                        <li><span class="bold">Género: </span><%= e.title %></li>
+                        <li><span class="bold">Website: </span><%= e.website %></li>
+                        <li><span class="bold">Teléfono: </span><%= e.phone %></li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+    </div>
+    <!-- Main -->
+
+    <!-- Footer -->
+    <%- include('partials/footer') %>
+    <!-- /Footer -->
+</body>
+</html>
